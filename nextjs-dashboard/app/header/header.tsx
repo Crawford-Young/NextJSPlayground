@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import { Home } from "../buttons/home";
-import { Profile } from "../buttons/profile";
-import { Work } from "../buttons/work";
-import { Projects } from "../buttons/projects";
-import { Contact } from "../buttons/contact";
+import { HomeButton } from "../buttons/HomeButton";
+import { ProfileButton } from "../buttons/ProfileButton";
+import { WorkButton } from "../buttons/WorkButton";
+import { ProjectButton } from "../buttons/ProjectButton";
+import { ContactButton } from "../buttons/ContactButton";
 import "./header.css";
 
 export default function Page() {
@@ -16,27 +16,27 @@ export default function Page() {
   return (
     <div>
       <div className="headerContainer">
-        <Home
+        <HomeButton
           handleHome={() => {
             setHome(!home);
           }}
         />
-        <Profile
+        <ProfileButton
           handleProfile={() => {
             setProfile(!profile);
           }}
         />
-        <Work
+        <WorkButton
           handleWork={() => {
             setWork(!work);
           }}
         />
-        <Projects
+        <ProjectButton
           handleProjects={() => {
             setProjects(!projects);
           }}
         />
-        <Contact
+        <ContactButton
           handleContact={() => {
             setContact(!contact);
           }}

@@ -1,8 +1,12 @@
-import AcmeLogo from "@/app/ui/acme-logo";
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
+"use client";
 import Header from "./header/header";
+import Body from "./body/body";
 
 export default function Page() {
-  return <Header />;
+  return (
+    <div>
+      <Header />
+      <Body />
+    </div>
+  );
 }

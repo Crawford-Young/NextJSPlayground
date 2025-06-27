@@ -1,6 +1,6 @@
 import { FileCode } from "lucide-react";
 
-export const Projects = ({
+export const ProjectButton = ({
   handleProjects,
 }: {
   handleProjects: () => void;
