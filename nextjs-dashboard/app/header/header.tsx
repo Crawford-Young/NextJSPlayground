@@ -14,34 +14,32 @@ export default function Page() {
   const [projects, setProjects] = useState(false);
   const [contact, setContact] = useState(false);
   return (
-    <div>
-      <div className="headerContainer">
-        <HomeButton
-          handleHome={() => {
-            setHome(!home);
-          }}
-        />
-        <ProfileButton
-          handleProfile={() => {
-            setProfile(!profile);
-          }}
-        />
-        <WorkButton
-          handleWork={() => {
-            setWork(!work);
-          }}
-        />
-        <ProjectButton
-          handleProjects={() => {
-            setProjects(!projects);
-          }}
-        />
-        <ContactButton
-          handleContact={() => {
-            setContact(!contact);
-          }}
-        />
-      </div>
+    <div className="headerContainer">
+      <HomeButton
+        handleHome={() => {
+          setHome(!home);
+        }}
+      />
+      <ProfileButton
+        handleProfile={() => {
+          setProfile(!profile);
+        }}
+      />
+      <WorkButton
+        handleWork={() => {
+          setWork(!work);
+        }}
+      />
+      <ProjectButton
+        handleProjects={() => {
+          setProjects(!projects);
+        }}
+      />
+      <ContactButton
+        handleContact={() => {
+          setContact(!contact);
+        }}
+      />
     </div>
   );
 }
