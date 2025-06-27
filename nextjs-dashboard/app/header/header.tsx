@@ -4,6 +4,7 @@ import { Home } from "../buttons/home";
 import { Profile } from "../buttons/profile";
 import { Work } from "../buttons/work";
 import { Projects } from "../buttons/projects";
+import { Contact } from "../buttons/contact";
 import "./header.css";
 
 export default function Page() {
@@ -11,6 +12,7 @@ export default function Page() {
   const [profile, setProfile] = useState(false);
   const [work, setWork] = useState(false);
   const [projects, setProjects] = useState(false);
+  const [contact, setContact] = useState(false);
   return (
     <div className="headerContainer">
       <Home
@@ -31,6 +33,11 @@ export default function Page() {
       <Projects
         handleProjects={() => {
           setProjects(!projects);
+        }}
+      />
+      <Contact
+        handleContact={() => {
+          setContact(!contact);
         }}
       />
     </div>
