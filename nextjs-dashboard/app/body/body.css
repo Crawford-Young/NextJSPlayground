@@ -10,3 +10,12 @@
   padding: 1rem;
   margin: 1rem;
 }
+
+.profile-circle {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Must match width for a perfect circle */
+  border-radius: 50%;
+  /* Additional styling for background image approach */
+  background-size: cover;
+  background-position: center center;
+}
