@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  overflow-y: auto;
   background-color: #f0f0f0;
   border-radius: 1rem;
   padding: 1rem;
@@ -12,8 +11,8 @@
 }
 
 .profile-circle {
-  width: 100px; /* Adjust size as needed */
-  height: 100px; /* Must match width for a perfect circle */
+  width: 40%; /* Adjust size as needed */
+  height: 60%; /* Must match width for a perfect circle */
   border-radius: 50%;
   /* Additional styling for background image approach */
   background-size: cover;

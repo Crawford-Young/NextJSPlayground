@@ -9,7 +9,11 @@ export default function Page() {
       <div className="headerContainer">
         <Header />
       </div>
-      <Body />
+      <div className="bodyContainer">
+        <Body />
+        <Body />
+        <Body />
+      </div>
     </div>
   );
 }

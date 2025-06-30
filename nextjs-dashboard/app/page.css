@@ -1,13 +1,13 @@
-.pageContainer {
-}
-
 body {
   background-color: black;
   font-family: "san francisco", sans-serif;
 }
 
 .headerContainer {
-  position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.bodyContainer {
+  overflow: auto;
 }
