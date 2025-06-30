@@ -6,7 +6,9 @@ import "./page.css";
 export default function Page() {
   return (
     <div className="pageContainer">
-      <Header />
+      <div className="headerContainer">
+        <Header />
+      </div>
       <Body />
     </div>
   );
