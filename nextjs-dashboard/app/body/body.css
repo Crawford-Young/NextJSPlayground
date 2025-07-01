@@ -11,8 +11,8 @@
 }
 
 .profile-circle {
-  width: 40%; /* Adjust size as needed */
-  height: 60%; /* Must match width for a perfect circle */
+  width: 25%; /* Adjust size as needed */
+  height: 25%; /* Must match width for a perfect circle */
   border-radius: 50%;
   /* Additional styling for background image approach */
   background-size: cover;
