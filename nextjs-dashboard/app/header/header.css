@@ -1,8 +1,9 @@
-.headerContainer {
+.headerButtonContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background-color: #f0f0f0;
   border-radius: 1rem;
+  box-shadow: 5px 5px 5px 5px grey;
 }

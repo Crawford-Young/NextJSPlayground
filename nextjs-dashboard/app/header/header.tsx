@@ -14,7 +14,7 @@ export default function Page() {
   const [projects, setProjects] = useState(false);
   const [contact, setContact] = useState(false);
   return (
-    <div className="headerContainer">
+    <div className="headerButtonContainer">
       <HomeButton
         handleHome={() => {
           setHome(!home);
