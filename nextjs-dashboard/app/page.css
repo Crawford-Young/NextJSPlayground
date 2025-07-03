@@ -5,6 +5,7 @@ body {
 .headerContainer {
   top: 0;
   z-index: 100;
+  position: sticky;
 }
 
 .bodyContainer {

@@ -8,7 +8,6 @@ import { ContactButton } from "../buttons/ContactButton";
 import "./header.css";
 
 export default function Page() {
-  const [home, setHome] = useState(false);
   const [profile, setProfile] = useState(false);
   const [work, setWork] = useState(false);
   const [projects, setProjects] = useState(false);
@@ -17,7 +16,7 @@ export default function Page() {
     <div className="headerButtonContainer">
       <HomeButton
         handleHome={() => {
-          setHome(!home);
+          window.scrollTo({ top: 0, behavior: "smooth" });
         }}
       />
       <ProfileButton
