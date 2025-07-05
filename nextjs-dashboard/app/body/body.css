@@ -3,7 +3,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  background-color: #f0f0f0;
+  border-radius: 1rem;
+  padding: 1rem 1rem 3rem 1rem;
+  margin: 1rem;
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+.generalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #f0f0f0;
   border-radius: 1rem;
   padding: 1rem;
@@ -18,4 +29,16 @@
   /* Additional styling for background image approach */
   background-size: cover;
   background-position: center center;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  text-shadow: 1px 1px 1px grey;
+}
+
+.title {
+  color: black;
+  margin-top: -0.5rem;
 }
