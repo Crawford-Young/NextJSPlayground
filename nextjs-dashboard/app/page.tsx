@@ -7,7 +7,12 @@ export default function Page() {
   return (
     <div className="pageContainer">
       <div className="headerContainer">
-        <Header />
+        <Header
+          profileHeight={100}
+          workHeight={200}
+          projectHeight={300}
+          contactHeight={400}
+        />
       </div>
       <div className="bodyContainer">
         <Body />

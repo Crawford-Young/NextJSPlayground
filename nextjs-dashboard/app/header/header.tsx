@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import { HomeButton } from "../buttons/HomeButton";
 import { ProfileButton } from "../buttons/ProfileButton";
 import { WorkButton } from "../buttons/WorkButton";
@@ -7,11 +6,19 @@ import { ProjectButton } from "../buttons/ProjectButton";
 import { ContactButton } from "../buttons/ContactButton";
 import "./header.css";
 
-export default function Page() {
-  const [profile, setProfile] = useState(false);
-  const [work, setWork] = useState(false);
-  const [projects, setProjects] = useState(false);
-  const [contact, setContact] = useState(false);
+interface HeaderProps {
+  profileHeight: number;
+  workHeight: number;
+  projectHeight: number;
+  contactHeight: number;
+}
+
+export default function Header({
+  profileHeight,
+  workHeight,
+  projectHeight,
+  contactHeight,
+}: HeaderProps) {
   return (
     <div className="headerButtonContainer">
       <HomeButton
@@ -21,22 +28,22 @@ export default function Page() {
       />
       <ProfileButton
         handleProfile={() => {
-          setProfile(!profile);
+          window.scrollTo({ top: profileHeight, behavior: "smooth" });
         }}
       />
       <WorkButton
         handleWork={() => {
-          setWork(!work);
+          window.scrollTo({ top: workHeight, behavior: "smooth" });
         }}
       />
       <ProjectButton
         handleProjects={() => {
-          setProjects(!projects);
+          window.scrollTo({ top: projectHeight, behavior: "smooth" });
         }}
       />
       <ContactButton
         handleContact={() => {
-          setContact(!contact);
+          window.scrollTo({ top: contactHeight, behavior: "smooth" });
         }}
       />
     </div>
