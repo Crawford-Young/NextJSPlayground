@@ -28,24 +28,48 @@ export default function Header({
       />
       <ProfileButton
         handleProfile={() => {
-          window.scrollTo({ top: profileHeight, behavior: "smooth" });
+          smoothScroll(profileHeight, 750);
         }}
       />
       <WorkButton
         handleWork={() => {
-          window.scrollTo({ top: workHeight, behavior: "smooth" });
+          smoothScroll(workHeight, 750);
         }}
       />
       <ProjectButton
         handleProjects={() => {
-          window.scrollTo({ top: projectHeight, behavior: "smooth" });
+          smoothScroll(projectHeight, 750);
         }}
       />
       <ContactButton
         handleContact={() => {
-          window.scrollTo({ top: contactHeight, behavior: "smooth" });
+          smoothScroll(contactHeight, 750);
         }}
       />
     </div>
   );
+
+  function smoothScroll(targetY: number, duration: number) {
+    const start = window.pageYOffset;
+    const distance = targetY - start;
+    const startTime = performance.now();
+
+    function scrollStep(currentTime: number) {
+      const timeElapsed = currentTime - startTime;
+      const run = easeInOut(timeElapsed, start, distance, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) {
+        requestAnimationFrame(scrollStep);
+      }
+    }
+
+    function easeInOut(t: number, b: number, c: number, d: number) {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(scrollStep);
+  }
 }
