@@ -50,7 +50,7 @@ export default function Header({
   );
 
   function smoothScroll(targetY: number, duration: number) {
-    const start = window.pageYOffset;
+    const start = window.scrollY;
     const distance = targetY - start;
     const startTime = performance.now();
 
