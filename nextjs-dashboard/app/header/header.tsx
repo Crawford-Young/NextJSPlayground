@@ -23,7 +23,7 @@ export default function Header({
     <div className="headerButtonContainer">
       <HomeButton
         handleHome={() => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
+          smoothScroll(0, 750);
         }}
       />
       <ProfileButton
