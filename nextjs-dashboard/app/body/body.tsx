@@ -1,5 +1,11 @@
 import { Home } from "./home";
+import { About } from "./about";
 
 export default function Body() {
-  return <Home />;
+  return (
+    <div>
+      <Home />
+      <About />
+    </div>
+  );
 }
