@@ -16,8 +16,6 @@ export default function Page() {
       </div>
       <div className="bodyContainer">
         <Body />
-        <Body />
-        <Body />
       </div>
     </div>
   );
