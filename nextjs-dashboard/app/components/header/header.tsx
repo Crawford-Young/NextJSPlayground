@@ -5,6 +5,7 @@ import { WorkButton } from "../buttons/WorkButton";
 import { ProjectButton } from "../buttons/ProjectButton";
 import { ContactButton } from "../buttons/ContactButton";
 import "./header.css";
+import { useRouter } from "next/navigation";
 
 interface HeaderProps {
   profileHeight: number;
@@ -19,6 +20,7 @@ export default function Header({
   projectHeight,
   contactHeight,
 }: HeaderProps) {
+  const router = useRouter();
   return (
     <div className="headerButtonContainer">
       <HomeButton
@@ -38,7 +40,7 @@ export default function Header({
       />
       <ProjectButton
         handleProjects={() => {
-          smoothScroll(projectHeight, 750);
+          router.push("/project");
         }}
       />
       <ContactButton
