@@ -1,11 +1,10 @@
-"use client";
 import { HomeButton } from "../buttons/HomeButton";
 import { ProfileButton } from "../buttons/ProfileButton";
 import { WorkButton } from "../buttons/WorkButton";
 import { ProjectButton } from "../buttons/ProjectButton";
 import { ContactButton } from "../buttons/ContactButton";
-import "./header.css";
 import { useRouter } from "next/navigation";
+import "./header.css";
 
 interface HeaderProps {
   profileHeight: number;
