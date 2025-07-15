@@ -8,6 +8,7 @@ export default function ProjectHeader() {
   return (
     <div className="projectHeaderContainer">
       <BackButton handleBack={() => router.back()} />
+      <h3>My Projects</h3>
     </div>
   );
 }
