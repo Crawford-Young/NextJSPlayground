@@ -1,5 +1,5 @@
 "use client";
-import ProjectHeader from "../components/project/ProjectHeader";
+import ProjectHeader from "../../components/project/ProjectHeader";
 
 export default function Page() {
   return <ProjectHeader />;

@@ -1,6 +1,6 @@
 import "./body.css";
 import Image from "next/image";
-import Headshot from "@/app/photos/profilePic.jpg";
+import Headshot from "@/public/profilePic.jpg";
 
 export const Home = () => {
   return (

@@ -1,6 +1,6 @@
 "use client";
-import Header from "./components/header/header";
-import Body from "./components/body/body";
+import Header from "../components/header/header";
+import Body from "../components/body/body";
 import "./page.css";
 
 export default function Page() {
