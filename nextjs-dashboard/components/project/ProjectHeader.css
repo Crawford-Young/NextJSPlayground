@@ -1,8 +1,0 @@
-.projectHeaderContainer {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  background-color: #f0f0f0;
-  border-radius: 0 0 1rem 1rem;
-  box-shadow: 5px 5px 5px 5px grey;
-}

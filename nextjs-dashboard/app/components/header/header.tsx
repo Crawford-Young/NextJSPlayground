@@ -1,3 +1,4 @@
+"use client";
 import { HomeButton } from "../buttons/HomeButton";
 import { ProfileButton } from "../buttons/ProfileButton";
 import { WorkButton } from "../buttons/WorkButton";
