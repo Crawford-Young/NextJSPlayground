@@ -8,7 +8,6 @@ export const About = () => {
       <p>CS @ Auburn</p>
       <p>President of the Auburn Web Development Club</p>
       <p>Auburn Competitive Programming Team</p>
-      <p>Tribal Director @ Camp Rockmont</p>
     </div>
   );
 };
